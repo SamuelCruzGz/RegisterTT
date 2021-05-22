@@ -32,9 +32,11 @@ class Usuario {
                     "usuario" : user.value,
                      
                 })
-            })    
+            })
+            let back = await resultado.json()
+            return back    
         } catch (e) {
-            
+            message : {e}
         }
         
     }
